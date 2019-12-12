@@ -26,13 +26,13 @@ public class WeatherRestController {
 
     @GetMapping("api/weather")
     public List<Weather> getWeather() {
-      //  logger.info("get weather");
+        logger.info("get weather");
         return weatherService.getWeather();
     }
 
     @GetMapping("api/weatherNull")
     public List<Weather> getWeatherNull() {
-     //   logger.info("get weatherNull");
+        logger.info("get weatherNull");
         return weatherServiceNull.getWeather();
     }
 
