@@ -14,8 +14,8 @@ import ru.otus.example.weatherdemo.services.WeatherAggregationService;
 http://openjdk.java.net/jeps/158
 
 
--Xms512m
--Xmx512m
+-Xms256m
+-Xmx256m
 -Xlog:gc=debug:file=./logs/gc-%p-%t.log:tags,uptime,time,level:filecount=5,filesize=10m
 -XX:+HeapDumpOnOutOfMemoryError
 -XX:HeapDumpPath=./logs/dump
