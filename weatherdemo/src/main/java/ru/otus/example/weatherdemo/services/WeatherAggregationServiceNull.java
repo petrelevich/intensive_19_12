@@ -48,6 +48,7 @@ public class WeatherAggregationServiceNull implements WeatherServiceAggregation 
     }
 
     private List<Weather> doRequest() throws InterruptedException {
+        weatherQueue.clear();
         for (WeatherService weatherService : weatherServices) {
             executor.submit(() -> {
                 var result = weatherQueue.offer(weatherService.getWeather());
